@@ -1,0 +1,8 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+
+.category-btn.active {
+  background-color: #15803d;
+  color: #ffffff;
+}
