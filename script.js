@@ -1,4 +1,3 @@
-
 let allPlantsCache = {};
 let cart = [];
 
@@ -37,13 +36,13 @@ const displayCategories = (categories) => {
     categoryContainer.innerHTML = "";
 
     const wrapper = document.createElement("div");
-    wrapper.classList = "flex flex-col items-start mx-auto space-y-2 px-2 whitespace-nowrap w-full";
+    wrapper.classList = "flex flex-row lg:flex-col items-start gap-2 lg:gap-0 lg:space-y-2 px-2 pb-2 lg:pb-0 overflow-x-auto lg:overflow-visible whitespace-nowrap w-full lg:w-auto";
 
 
 
     wrapper.innerHTML += `
         <button id="category-btn-0" onclick="loadAllPlants()"
-            class="category-btn text-left w-full px-3 py-1 rounded-md hover:bg-[#15803D] hover:text-white bg-[#15803D] text-white font-semibold">
+            class="category-btn shrink-0 text-left w-auto lg:w-full px-3 py-1 rounded-md hover:bg-[#15803D] hover:text-white bg-[#15803D] text-white font-semibold">
             All Trees
         </button>
     `;
@@ -51,7 +50,7 @@ const displayCategories = (categories) => {
     categories.forEach(category => {
         wrapper.innerHTML += `
             <button id="category-btn-${category.id}" onclick="loadCategoryPlants(${category.id})"
-                class="category-btn text-left w-full px-3 py-1 rounded-md hover:bg-[#15803D] hover:text-white">
+                class="category-btn shrink-0 text-left w-auto lg:w-full px-3 py-1 rounded-md hover:bg-[#15803D] hover:text-white">
                 ${category.category_name}
             </button>
         `;
