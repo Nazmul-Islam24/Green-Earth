@@ -75,7 +75,53 @@
         </div>
 
 
-        
+        <!-- Choose Trees Section-->
+        <div class="choose-trees items-center mx-auto w-11/12">
+            <h3 class="text-3xl font-bold text-center mb-5">Choose Your Trees</h3>
+            <div class="flex gap-13">
+
+                <!-- Categories sidebar -->
+                <div class="flex flex-col space-y-3">
+                    <h2 class="font-bold text-xl">Categories</h2>
+                    <div id="categories-container">
+                        <div class="flex flex-col items-start mx-auto space-y-2 px-2 whitespace-nowrap">
+                            <span class="loading loading-spinner loading-sm"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Spinner loading (left)-->
+                <div id="spinner" class="hidden flex-1 flex justify-center items-center">
+                    <span class="loading loading-spinner loading-lg"></span>
+
+                </div>
+
+
+                <!-- cards (middle)-->
+                <div id="cards-container" class="card-items grid grid-cols-3 gap-5">
+
+                </div>
+
+
+                <!-- Cart listed (right)-->
+                <div class="flex flex-col bg-white p-3 rounded h-fit">
+                    <div id="cart-container" class="your-cart items-end space-y-2 mb-2 bg-white rounded-xl">
+                        <h3 class="text-2xl font-bold whitespace-nowrap">Your Cart</h3>
+
+                    </div>
+
+                    <div class="border-gray-200 flex justify-between border-t mt-1 font-semibold">
+                        <p>Total:</p>
+                        <p>৳<span id="cart-total">0</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
     </section>
 
 
